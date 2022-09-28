@@ -143,6 +143,11 @@ h2 {
 .supervisor-card {
   position: relative;
   border-top: 4px solid var(--Cyan);
+  transition: 0.7s ease;
+}
+
+.supervisor-card:hover {
+  border-bottom: 4px solid var(--Cyan);
 }
 
 .supervisor-card:before {
@@ -159,6 +164,11 @@ h2 {
 .team-card {
   position: relative;
   border-top: 4px solid var(--Red);
+  transition: 0.7s ease;
+}
+
+.team-card:hover {
+  border-bottom: 4px solid var(--Red);
 }
 
 .team-card:before {
@@ -175,6 +185,10 @@ h2 {
 .karma-card {
   position: relative;
   border-top: 4px solid var(--Orange);
+  transition: 0.7s ease;
+}
+.karma-card:hover {
+  border-bottom: 4px solid var(--Orange);
 }
 
 .karma-card:before {
@@ -191,6 +205,11 @@ h2 {
 .calculator-card {
   position: relative;
   border-top: 4px solid var(--Blue);
+  transition: 0.7s ease;
+}
+
+.calculator-card:hover {
+  border-bottom: 4px solid var(--Blue);
 }
 
 .calculator-card:before {
@@ -218,9 +237,9 @@ h2 {
     gap: 20px;
   }
 
-  .karma-card {
-    /* grid-area: bottom; */
-  }
+  /* .karma-card {
+    grid-area: bottom;
+  } */
 
   .calculator-card {
     grid-area: end;
