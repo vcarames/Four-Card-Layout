@@ -210,7 +210,6 @@ h2 {
 
 @media (min-width: 800px) {
   .card-container {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
@@ -220,8 +219,7 @@ h2 {
   }
 
   .karma-card {
-    grid-area: start;
-    align-self: center;
+    /* grid-area: bottom; */
   }
 
   .calculator-card {
@@ -233,7 +231,8 @@ h2 {
     grid-area: top;
   }
 
-  /* .supervisor-card {
-    grid-area: bottom;
-  } */
+  .supervisor-card {
+    grid-area: start;
+    align-self: center;
+  }
 }
