@@ -68,4 +68,53 @@ select {
 
 body {
   font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.card-container {
+  display: grid;
+  gap: 20px;
+}
+
+/* *********************** */
+/* CARD GENERAL STYLING */
+/* *********************** */
+
+.heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h1 span {
+  font-weight: 600;
+}
+
+.card {
+  min-height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* *********************** */
+/* CARD STYLING */
+/* *********************** */
+
+.supervisor-card {
+  border-top: 2px solid var(--Cyan);
+}
+
+.team-card {
+  border-top: 2px solid var(--Red);
+}
+
+.karma-card {
+  border-top: 2px solid var(--Orange);
+}
+.calculator-card {
+  border-top: 2px solid var(--Blue);
 }
