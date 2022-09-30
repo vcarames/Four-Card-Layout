@@ -233,33 +233,33 @@ h2 {
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
   }
-
+}
 
 @media (min-width: 900px) {
   .card-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-      "start top end"
-      "start botton end";
+      "supervisor team calculator"
+      "supervisor karma calculator";
     gap: 20px;
   }
 
-  /* .karma-card {
-    grid-area: bottom;
-  } */
+  .karma-card {
+    grid-area: karma;
+  }
 
   .calculator-card {
-    grid-area: end;
+    grid-area: calculator;
     align-self: center;
   }
 
   .team-card {
-    grid-area: top;
+    grid-area: team;
   }
 
   .supervisor-card {
-    grid-area: start;
+    grid-area: supervisor;
     align-self: center;
   }
 }
