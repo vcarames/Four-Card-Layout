@@ -227,7 +227,15 @@ h2 {
 /* MEDIA QUERY */
 /* *********************** */
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+
+@media (min-width: 900px) {
   .card-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
