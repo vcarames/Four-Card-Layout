@@ -118,7 +118,7 @@ h2 {
 .card {
   max-width: 350px;
   min-height: 250px;
-  padding: 20px;
+  padding: 30px;
   border-radius: 6px;
   box-shadow: 0px 2px 15px 4px rgba(0, 0, 0, 0.1);
 
@@ -140,6 +140,12 @@ h2 {
 /* CARD STYLING */
 /* *********************** */
 
+.card-icon {
+  position: absolute;
+  top: 61%;
+  left: 72%;
+}
+
 .supervisor-card {
   position: relative;
   border-top: 4px solid var(--Cyan);
@@ -148,17 +154,6 @@ h2 {
 
 .supervisor-card:hover {
   border-bottom: 4px solid var(--Cyan);
-}
-
-.supervisor-card:before {
-  position: absolute;
-  content: "";
-  background-image: url(../images/icon-supervisor.svg);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  top: 61%;
-  left: 70%;
 }
 
 .team-card {
@@ -171,17 +166,6 @@ h2 {
   border-bottom: 4px solid var(--Red);
 }
 
-.team-card:before {
-  position: absolute;
-  content: "";
-  background-image: url(../images/icon-team-builder.svg);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  top: 61%;
-  left: 70%;
-}
-
 .karma-card {
   position: relative;
   border-top: 4px solid var(--Orange);
@@ -189,17 +173,6 @@ h2 {
 }
 .karma-card:hover {
   border-bottom: 4px solid var(--Orange);
-}
-
-.karma-card:before {
-  position: absolute;
-  content: "";
-  background-image: url(../images/icon-karma.svg);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  top: 61%;
-  left: 70%;
 }
 
 .calculator-card {
@@ -210,17 +183,6 @@ h2 {
 
 .calculator-card:hover {
   border-bottom: 4px solid var(--Blue);
-}
-
-.calculator-card:before {
-  position: absolute;
-  content: "";
-  background-image: url(../images/icon-calculator.svg);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  top: 61%;
-  left: 70%;
 }
 
 /* *********************** */
