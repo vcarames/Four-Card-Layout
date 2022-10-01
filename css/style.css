@@ -71,7 +71,7 @@ body {
   display: grid;
   place-content: center;
   font-family: "Poppins", sans-serif;
-  padding: 20px;
+  padding: 1.25rem;
 
   background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
@@ -82,7 +82,7 @@ body {
 .card-container {
   display: grid;
   place-content: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 /* *********************** */
@@ -93,11 +93,11 @@ header {
   display: grid;
   place-content: center;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 header p {
-  max-width: 540px;
+  max-width: 33.75rem;
   font-size: clamp(0.88rem, calc(0.84rem + 0.18vw), 1rem);
   color: var(--Grayish-Blue);
 }
@@ -116,14 +116,14 @@ h2 {
 }
 
 .card {
-  max-width: 350px;
-  min-height: 200px;
-  padding: 20px;
-  border-radius: 6px;
-  box-shadow: 0px 2px 15px 4px rgba(0, 0, 0, 0.1);
+  max-width: 21.875rem;
+  min-height: 12.5rem;
+  padding: 1.25rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 0.125rem 0.9375rem 0.25rem rgba(0, 0, 0, 0.1);
 
-  backdrop-filter: blur(16px) saturate(100%);
-  -webkit-backdrop-filter: blur(16px) saturate(100%);
+  backdrop-filter: blur(1rem) saturate(100%);
+  -webkit-backdrop-filter: blur(1rem) saturate(100%);
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -132,7 +132,7 @@ h2 {
 }
 
 .card p {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--Grayish-Blue);
 }
 
@@ -147,70 +147,63 @@ h2 {
 }
 
 .supervisor-card {
-  position: relative;
-  border-top: 4px solid var(--Cyan);
+  border-top: 0.25rem solid var(--Cyan);
   transition: 0.7s ease;
 }
 
 .supervisor-card:hover {
-  border-bottom: 4px solid var(--Cyan);
+  border-bottom: 0.25rem solid var(--Cyan);
 }
 
 .team-card {
-  position: relative;
-  border-top: 4px solid var(--Red);
+  border-top: 0.25rem solid var(--Red);
   transition: 0.7s ease;
 }
 
 .team-card:hover {
-  border-bottom: 4px solid var(--Red);
+  border-bottom: 0.25rem solid var(--Red);
 }
 
 .karma-card {
-  position: relative;
-  border-top: 4px solid var(--Orange);
+  border-top: 0.25rem solid var(--Orange);
   transition: 0.7s ease;
 }
 .karma-card:hover {
-  border-bottom: 4px solid var(--Orange);
+  border-bottom: 0.25rem solid var(--Orange);
 }
 
 .calculator-card {
-  position: relative;
-  border-top: 4px solid var(--Blue);
+  border-top: 0.25rem solid var(--Blue);
   transition: 0.7s ease;
 }
 
 .calculator-card:hover {
-  border-bottom: 4px solid var(--Blue);
+  border-bottom: 0.25rem solid var(--Blue);
 }
 
 /* *********************** */
 /* MEDIA QUERY */
 /* *********************** */
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
   }
 
   .card {
-    max-width: 350px;
-    min-height: 250px;
-    padding: 30px;
+    min-height: 15.625rem;
+    padding: 1.875rem;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 56.25em) {
   .card-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
       "supervisor team calculator"
       "supervisor karma calculator";
-    gap: 20px;
   }
 
   .karma-card {
@@ -243,8 +236,8 @@ h2 {
 
 @-webkit-keyframes header-entrance {
   0% {
-    -webkit-transform: translateZ(-80px);
-    transform: translateZ(-80px);
+    -webkit-transform: translateZ(-5rem);
+    transform: translateZ(-5rem);
     opacity: 0;
   }
   100% {
@@ -255,8 +248,8 @@ h2 {
 }
 @keyframes header-entrance {
   0% {
-    -webkit-transform: translateZ(-80px);
-    transform: translateZ(-80px);
+    -webkit-transform: translateZ(-5rem);
+    transform: translateZ(-5rem);
     opacity: 0;
   }
   100% {
