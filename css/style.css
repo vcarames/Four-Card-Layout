@@ -90,29 +90,30 @@ body {
 /* *********************** */
 
 header {
+  /* max-width: 420px; */
   display: grid;
   place-content: center;
   text-align: center;
   margin-bottom: 3.75rem;
 }
 
-header p {
-  max-width: 33.75rem;
-  font-size: clamp(0.88rem, calc(0.84rem + 0.18vw), 1rem);
-  color: var(--Grayish-Blue);
-}
-
-h1 {
+.header-heading {
   font-size: clamp(1.25rem, calc(0.96rem + 1.43vw), 2.25rem);
   font-weight: 200;
   color: var(--Grayish-Blue);
+  align-self: center;
 }
 
-h2 {
-  font-size: clamp(1.25rem, calc(0.96rem + 1.43vw), 2.25rem);
+.header-heading span {
   font-weight: 600;
   color: var(--Very-Dark-Blue);
-  margin-bottom: 20px;
+}
+
+.header-paragraph {
+  max-width: 33.75rem;
+  font-size: clamp(0.88rem, calc(0.84rem + 0.18vw), 1rem);
+  color: var(--Grayish-Blue);
+  align-self: center;
 }
 
 .card {
@@ -127,11 +128,11 @@ h2 {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.card h3 {
+.card-heading {
   color: var(--Very-Dark-Blue);
 }
 
-.card p {
+.card-paragraph {
   font-size: 0.875rem;
   color: var(--Grayish-Blue);
 }
