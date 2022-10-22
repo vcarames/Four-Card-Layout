@@ -126,6 +126,9 @@ header {
   backdrop-filter: blur(1rem) saturate(100%);
   -webkit-backdrop-filter: blur(1rem) saturate(100%);
   background-color: rgba(255, 255, 255, 0.2);
+
+  border-bottom: 0.25rem solid transparent;
+  transition: all 0.7s;
 }
 
 .card-heading {
@@ -149,7 +152,6 @@ header {
 
 .supervisor-card {
   border-top: 0.25rem solid var(--Cyan);
-  transition: 0.7s ease;
 }
 
 .supervisor-card:hover {
@@ -158,7 +160,6 @@ header {
 
 .team-card {
   border-top: 0.25rem solid var(--Red);
-  transition: 0.7s ease;
 }
 
 .team-card:hover {
@@ -167,7 +168,6 @@ header {
 
 .karma-card {
   border-top: 0.25rem solid var(--Orange);
-  transition: 0.7s ease;
 }
 .karma-card:hover {
   border-bottom: 0.25rem solid var(--Orange);
@@ -175,7 +175,6 @@ header {
 
 .calculator-card {
   border-top: 0.25rem solid var(--Blue);
-  transition: 0.7s ease;
 }
 
 .calculator-card:hover {
